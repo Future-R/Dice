@@ -97,8 +97,17 @@ static std::string strPropCleared = "已清除所有属性";
 static std::string strPropDeleted = "属性删除成功";
 static std::string strPropNotFound = "错误:属性不存在";
 static std::string strProp = "{0}的{1}属性值为{2}";
-static std::string strHlpMsg = R"(Dice! Version 2.2.0
-注:[ ]中的命令为可选命令
+static std::string strHlpMsg = R"(LoveDreamDice 1.0
+发牌姬：
+关闭牌库/开启牌库		使所有弃牌回到牌库并暂停发牌姬/恢复发牌姬
+查看手牌			在当前群/多人聊天中展示你的手牌
+重新开局			使所有人的手牌和弃牌回到牌库（切勿随意使用！）
+发牌 [X]			从牌堆抽X张牌
+发牌 [【X】]			从牌堆将名为X的牌置入手牌
+弃牌 [【X】]			从手牌打出或舍弃名为X的牌
+摸弃牌 [【X】]		从弃牌堆将名为X的牌置入手牌
+弃入牌堆 [【X】]		从弃牌堆将名为X的牌置入牌堆
+骰子姬：
 <通用命令>
 .r/d/o [掷骰表达式*] [原因]		普通掷骰
 .w/ww XaY						骰池
@@ -129,8 +138,7 @@ static std::string strHlpMsg = R"(Dice! Version 2.2.0
 *COC7惩罚骰为P+个数,奖励骰为B+个数
  支持使用K来取较大的几个骰子
  支持使用 个数#表达式 进行多轮掷骰
-**SC表达式为 成功扣San/失败扣San,如:1/1d6
-插件交流/bug反馈/查看源代码请加QQ群624807593)";
+**SC表达式为 成功扣San/失败扣San,如:1/1d6)";
 
 
 static std::string strRules = std::string(R"QWQWQ([||力量||STR||]力量（STR）：投3d6，结果乘5，即是力量属性。
